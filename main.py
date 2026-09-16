@@ -37,6 +37,11 @@ def adicionar_links(imovel):
     return imovel
 
 
+@app.route("/", methods=["GET"])
+def health():
+    return jsonify({"status": "ok", "_links": {"imoveis": "/imoveis"}}), 200
+
+
 @app.route("/imoveis", methods=["GET"])
 def listar_imoveis():
     tipo = request.args.get("tipo")
