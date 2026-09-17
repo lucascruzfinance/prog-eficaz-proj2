@@ -48,6 +48,8 @@ Cada resposta da API inclui `_links` com as ações disponíveis para o recurso,
 
 ## Deploy na AWS
 
-O deploy na AWS não foi concluído pois o IP da instância EC2 não estava disponível no material enviado pelo professor. O arquivo `.pem` (`progeficaz_25a.pem`) foi recebido, as permissões foram configuradas corretamente e a tentativa de conexão SSH foi realizada, porém sem o IP da instância EC2 não foi possível prosseguir. Todos os demais requisitos foram atendidos, incluindo os critérios de A e A+: códigos HTTP corretos e API no nível 3 de Richardson (HATEOAS).
+API hospedada e acessível em: **http://3.80.44.15:5000/imoveis**
+
+Deploy realizado em instância EC2 Ubuntu 22.04 na AWS, com Gunicorn como servidor WSGI e Nginx como proxy reverso.
 
 Link da AWS:
